@@ -17,4 +17,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: xcodebuild test -scheme moniheatme -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15'
+      run: xcodebuild -project moniheatme/moniheatme.xcodeproj -scheme moniheatme -sdk iphonesimulator
+      
